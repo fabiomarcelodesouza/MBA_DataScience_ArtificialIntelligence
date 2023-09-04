@@ -1,0 +1,2 @@
+mongoimport --db avaliacao_grupo --collection Produto --file /tmp/produtos.json
+mongoimport --db avaliacao_grupo --collection Cliente --file /tmp/clientes.json

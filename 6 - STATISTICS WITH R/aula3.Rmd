@@ -1,0 +1,18 @@
+```{r}
+install.packages("ggplot2")
+install.packages("dplyr")
+library(ggplot2)
+library(readr)
+library(dplyr)
+
+#O que acontece quando rodamos o código ggplot (data = mtcars)
+ggplot(data = mtcars)
+
+#Utilizando a base mtcars , faça um gráfico de dispersão de mpg por qsec
+ggplot(mtcars) + geom_point(mapping = aes(x = mpg, y = qsec))
+
+tvA <- pnorm(6, mean = 10, sd = 2)*100
+tvB <- pnorm(6, mean = 11, sd = 3)*100
+tvA
+tvB
+```
