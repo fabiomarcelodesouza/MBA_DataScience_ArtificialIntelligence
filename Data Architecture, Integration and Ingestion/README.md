@@ -1,6 +1,6 @@
 # Disciplina: Data Architecture, Integration and Ingestion
 
-## Professor: [Ivan Ferrreira Gancev](https://www.linkedin.com/in/ivan-gancev-8571b017/)
+## Professor: [Ivan Ferrreira Gancev](https://www.linkedin.com/in/ivan-gancev-8571b017/)(https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
 ## Conteúdo da Disciplina
 1. Pilares de arquitetura: persistência, integração e consumo
@@ -97,7 +97,7 @@ Entrega 02: Desenvolver um (1) pipeline do processos de ingestão de um dos requ
 1. [Fabio Souza](https://www.linkedin.com/in/fabiomarcelosouza/)
 2. [Felipe Scudeller](https://www.linkedin.com/in/felipe-scudeller/)
 3. [Letícia Ribeiro](https://www.linkedin.com/in/let%C3%ADcia-ribeiro-silva/)
-4. Raffael Paiva
+4. [Raffael Paiva](https://www.linkedin.com/in/raffael-oliveira-paiva/)
 
 ### Ferramentas e Tecnologias Utilizadas
 1. **[MongoDB](https://docs.mongodb.com/)**:
