@@ -94,10 +94,10 @@ Entrega 02: Desenvolver um (1) pipeline do processos de ingestão de um dos requ
 2. Telas e relatórios para análise das transações da conta (exemplo: análise por período e por tipo de movimento)
 
 ### Integrantes da Equipe
-1. [Fabio Souza](https://www.linkedin.com/in/fabiomarcelosouza/)
-2. [Felipe Scudeller](https://www.linkedin.com/in/felipe-scudeller/)
-3. [Letícia Ribeiro](https://www.linkedin.com/in/let%C3%ADcia-ribeiro-silva/)
-4. [Raffael Paiva](https://www.linkedin.com/in/raffael-oliveira-paiva/)
+1. Fabio Souza [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/fabiomarcelosouza/){:target="_blank"}
+2. Felipe Scudeller [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/felipe-scudeller/){:target="_blank"}
+3. Letícia Ribeiro [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/let%C3%ADcia-ribeiro-silva/){:target="_blank"}
+4. Raffael Paiva [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/raffael-oliveira-paiva/){:target="_blank"}
 
 ### Ferramentas e Tecnologias Utilizadas
 1. **[MongoDB](https://docs.mongodb.com/)**:
