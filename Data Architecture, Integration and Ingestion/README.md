@@ -1,6 +1,6 @@
 # Disciplina: Data Architecture, Integration and Ingestion
 
-## Professor: [Ivan Ferrreira Gancev](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+## Professor: ![Ivan Ferrreira Gancev](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
 ## Conteúdo da Disciplina
 1. Pilares de arquitetura: persistência, integração e consumo
