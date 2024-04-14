@@ -61,19 +61,19 @@ Parte 3:
 2. Victor Galvão [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/victor-galv%C3%A3o-74b63410a/)
 
 ### Ferramentas e Tecnologias Utilizadas
-1. **[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://docs.mongodb.com/)**
+1. **MongoDB [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://docs.mongodb.com/)**
    - MongoDB é um banco de dados NoSQL orientado a documentos.
    - Utiliza documentos JSON flexíveis para armazenar dados, oferecendo alta escalabilidade e desempenho.
    - Amplamente utilizado em aplicações web, móveis e de IoT para armazenamento e processamento de dados não estruturados.
    - Ideal para casos de uso que exigem flexibilidade no esquema de dados e escalabilidade horizontal.
 
-2. **[![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://dev.mysql.com/doc/)**
+2. **MySQL [![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://dev.mysql.com/doc/)**
    - MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS).
    - Oferece uma estrutura de tabelas com relações definidas, usando a linguagem SQL para consultas e manipulação de dados.
    - Conhecido por sua confiabilidade, desempenho e facilidade de uso, é amplamente utilizado em uma variedade de aplicativos, desde pequenos websites até grandes sistemas corporativos.
    - Suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), garantindo integridade e consistência dos dados.
 
-3. **[![Cassandra](https://img.shields.io/badge/Cassandra-Database-purple?style=flat-square&logo=apache-cassandra)](https://cassandra.apache.org/doc/)**
+3. **Cassandra [![Cassandra](https://img.shields.io/badge/Cassandra-Database-purple?style=flat-square&logo=apache-cassandra)](https://cassandra.apache.org/doc/)**
    - Apache Cassandra é um banco de dados distribuído altamente escalável e de código aberto.
    - Projetado para lidar com grandes volumes de dados e fornecer alta disponibilidade sem pontos únicos de falha.
    - Utiliza uma arquitetura descentralizada, distribuindo os dados através de vários nós para garantir tolerância a falhas e escalabilidade linear.
@@ -117,23 +117,23 @@ Entrega 02: Desenvolver um (1) pipeline do processos de ingestão de um dos requ
 4. Raffael Paiva [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/raffael-oliveira-paiva/)
 
 ### Ferramentas e Tecnologias Utilizadas
-1. **[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://docs.mongodb.com/)**
+1. **MongoDB [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://docs.mongodb.com/)**
    - MongoDB é um banco de dados NoSQL orientado a documentos.
    - Utiliza documentos JSON flexíveis para armazenar dados, oferecendo alta escalabilidade e desempenho.
    - Amplamente utilizado em aplicações web, móveis e de IoT para armazenamento e processamento de dados não estruturados.
    - Ideal para casos de uso que exigem flexibilidade no esquema de dados e escalabilidade horizontal.
 
-2. **[![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://dev.mysql.com/doc/)**
+2. **MySQL [![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)](https://dev.mysql.com/doc/)**
    - MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS).
    - Oferece uma estrutura de tabelas com relações definidas, usando a linguagem SQL para consultas e manipulação de dados.
    - Conhecido por sua confiabilidade, desempenho e facilidade de uso, é amplamente utilizado em uma variedade de aplicativos, desde pequenos websites até grandes sistemas corporativos.
    - Suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), garantindo integridade e consistência dos dados.
 
-3. **[![Apache Hadoop HDFS](https://img.shields.io/badge/Apache_Hadoop_HDFS-File_System-yellow?style=flat-square&logo=apache)](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html)**
+3. **Apache Hadoop HDFS [![Apache Hadoop HDFS](https://img.shields.io/badge/Apache_Hadoop_HDFS-File_System-yellow?style=flat-square&logo=apache)](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html)**
    - O Hadoop HDFS (Hadoop Distributed File System) é um sistema de arquivos distribuído projetado para armazenar grandes volumes de dados em clusters de computadores.
    - Ele fornece alta taxa de transferência de dados e tolerância a falhas, permitindo o processamento eficiente de dados distribuídos em grandes escalas.
 
-4. **[![Apache NiFi](https://img.shields.io/badge/Apache_NiFi-Data_Flow-orange?style=flat-square&logo=apache-nifi)](https://nifi.apache.org/docs.html)**
+4. **Apache NiFi [![Apache NiFi](https://img.shields.io/badge/Apache_NiFi-Data_Flow-orange?style=flat-square&logo=apache-nifi)](https://nifi.apache.org/docs.html)**
    - Apache NiFi é uma plataforma de código aberto para automação de fluxo de dados em tempo real e gestão de dados.
    - Oferece uma interface gráfica para criar, monitorar e gerenciar pipelines de dados de maneira visual e intuitiva.
    - Amplamente utilizado para integrar sistemas heterogêneos, processar e transformar dados em tempo real, bem como gerenciar o fluxo de dados em ambientes distribuídos.
