@@ -1,0 +1,12 @@
+docker cp C:\5dts\decs.tar namenode:arq_hdfs_mysql_mongodb/quantum_finance
+docker cp C:\5dts\fotos.tar namenode:arq_hdfs_mysql_mongodb/quantum_finance
+docker cp C:\5dts\clientes.csv namenode:arq_hdfs_mysql_mongodb/quantum_finance
+docker container exec -it namenode bash 
+cd arq_hdfs_mysql_mongodb/quantum_finance
+tar -xvf fotos.tar
+tar -xvf decs.tar
+cd /
+hdfs dfs -copyFromLocal arq_hdfs_mysql_mongodb/quantum_finance/*.csv /quantum_finance/data
+hdfs dfs -copyFromLocal arq_hdfs_mysql_mongodb/quantum_finance/*.jpg /quantum_finance/jpg
+hdfs dfs -copyFromLocal arq_hdfs_mysql_mongodb/quantum_finance/*.pdf /quantum_finance/pdf
+exit

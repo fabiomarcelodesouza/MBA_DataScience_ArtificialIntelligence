@@ -1,0 +1,9 @@
+docker container exec -it namenode bash
+mkdir arq_hdfs_mysql_mongodb
+cd arq_hdfs_mysql_mongodb
+mkdir quantum_finance
+hdfs dfs -mkdir /quantum_finance
+hdfs dfs -mkdir /quantum_finance/data
+hdfs dfs -mkdir /quantum_finance/jpg
+hdfs dfs -mkdir /quantum_finance/pdf
+exit
