@@ -33,13 +33,13 @@ Cenário: A DinDinAgora está no mercado, os investidores veem muito potencial, 
 A DindinAgora tem sofrido com lentidões em seu sistema transacional principal, onde os clientes podem se cadastrar, adquirir produtos(crédito) e realizar transações financeiras, como depósitos e transferências. Vocês, como arquitetos de dados identificam que a problemática ocorre por falhas na estrutura de dados, que não está normalizada corretamente. 
 Objetivo: construir um MER (modelo entidade relacional) na terceira forma normal para cadastrar clientes, com dados cadastrais contendo dados documentais, de endereço, depósitos, aquisições de produtos de crédito e transferências.
 
-**Entrega:** 
+**Entrega:**
 Arquivo com o desenho do Modelo com todas suas relações descritas.
 
 **Arquitetura de Dados - Parte 2 - DW Dimensional**
 Uma vez que a DindinAgora está com seu Sistema transacional modelado de forma normalizada e otimizado, agora precisamos construir um Data Warehouse para gerar relatórios, gráficos para diretoria e análises. Esse Data Warehouse deve conter fatos descrevendo, depósitos, transferências e contratações. E as dimensões devem descrever os produtos, categoria de cliente, tempo (quando) e outras dimensões que vocês entendam ser importantes para o negócio da DinDinAgora.
 
-**Entrega:** 
+**Entrega:**
 Arquivo com o desenho do modelo com todas suas relações descritas.
 
 **Arquitetura de Dados – Parte 3 - Big Data**
@@ -66,7 +66,7 @@ Os filtros mais utilizados são: data de cadastro, ultimo login, faixa de renda 
 
 Com base neste cenário, será implementado um ambiente Big Data para processamento dessas visões e relatórios. O desafio do trabalho é implementar um modelo de dados, que seja efetivo, com desempenho e custo controlado para estas visões. Neste momento, o maior objetivo é entregar desempenho.
 
-**Entrega:** 
+**Entrega:**
 1. Arquivo como desenho do modelo com todas as suas relações descritas;
 2. Definição e justificativa do particionamento e clusterização.
 
