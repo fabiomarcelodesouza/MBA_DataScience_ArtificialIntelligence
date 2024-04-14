@@ -1,8 +1,6 @@
 # Disciplina: Advanced Data Modeling
 
-## Indice de Conteúdo
 - [Disciplina: Advanced Data Modeling](#disciplina-advanced-data-modeling)
-  - [Indice de Conteúdo](#indice-de-conteúdo)
   - [Professor: Nilton Kazuyuki Ueda ](#professor-nilton-kazuyuki-ueda-)
   - [Conteúdo da Disciplina](#conteúdo-da-disciplina)
 - [Cases Desenvolvidos](#cases-desenvolvidos)
@@ -35,12 +33,14 @@ Cenário: A DinDinAgora está no mercado, os investidores veem muito potencial, 
 A DindinAgora tem sofrido com lentidões em seu sistema transacional principal, onde os clientes podem se cadastrar, adquirir produtos(crédito) e realizar transações financeiras, como depósitos e transferências. Vocês, como arquitetos de dados identificam que a problemática ocorre por falhas na estrutura de dados, que não está normalizada corretamente. 
 Objetivo: construir um MER (modelo entidade relacional) na terceira forma normal para cadastrar clientes, com dados cadastrais contendo dados documentais, de endereço, depósitos, aquisições de produtos de crédito e transferências.
 
-**Entrega:** Arquivo com o desenho do Modelo com todas suas relações descritas.
+**Entrega:** 
+Arquivo com o desenho do Modelo com todas suas relações descritas.
 
 **Arquitetura de Dados - Parte 2 - DW Dimensional**
 Uma vez que a DindinAgora está com seu Sistema transacional modelado de forma normalizada e otimizado, agora precisamos construir um Data Warehouse para gerar relatórios, gráficos para diretoria e análises. Esse Data Warehouse deve conter fatos descrevendo, depósitos, transferências e contratações. E as dimensões devem descrever os produtos, categoria de cliente, tempo (quando) e outras dimensões que vocês entendam ser importantes para o negócio da DinDinAgora.
 
-**Entrega:** Arquivo com o desenho do modelo com todas suas relações descritas.
+**Entrega:** 
+Arquivo com o desenho do modelo com todas suas relações descritas.
 
 **Arquitetura de Dados – Parte 3 - Big Data**
 A DindinAgora vem crescendo e o DW construído tem papel fundamental para as decisões tomadas e acertos estratégicos, porém quanto mais a empresa cresce, mais volume de dados precisa ser processado. Aos poucos a performance do DW, vem diminuindo, porém nada alarmante. Porém, uma nova demanda, traz a ideia de iniciar um Data Lake para a DinDinAgora, existem 3 relatórios que vem aumentando seu volume com maior velocidade, e o time de negócios solicitou a inclusão de dados externos nestes relatórios: 
