@@ -1,3 +1,18 @@
+- [Disciplina: Data Architecture, Integration and Ingestion](#disciplina-data-architecture-integration-and-ingestion)
+  - [Professor: Ivan Ferrreira Gancev ](#professor-ivan-ferrreira-gancev-)
+  - [Conteúdo da Disciplina](#conteúdo-da-disciplina)
+- [Trabalhos Desenvolvidos](#trabalhos-desenvolvidos)
+  - [Trabalho em grupo](#trabalho-em-grupo)
+    - [Descrição:](#descrição)
+    - [Integrantes da Equipe](#integrantes-da-equipe)
+    - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas)
+    - [Entregas Realizadas](#entregas-realizadas)
+  - [Projeto Integrado](#projeto-integrado)
+    - [Descrição:](#descrição-1)
+    - [Integrantes da Equipe](#integrantes-da-equipe-1)
+    - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas-1)
+    - [Entregas Realizadas](#entregas-realizadas-1)
+
 # Disciplina: Data Architecture, Integration and Ingestion
 
 ## Professor: Ivan Ferrreira Gancev [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ivan-gancev-8571b017/)
