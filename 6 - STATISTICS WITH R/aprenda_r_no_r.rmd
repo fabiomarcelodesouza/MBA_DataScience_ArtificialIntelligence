@@ -1,9 +1,0 @@
-install.packages("swirl")
-library(swirl)
-select_language(language = 'portuguese')
-uninstall_course('Aprenda_R_no_R')
-install_course_github('elthonf','Aprenda_R_no_R')
-
-
-swirl()
-
