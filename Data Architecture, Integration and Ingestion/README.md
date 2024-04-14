@@ -1,6 +1,6 @@
 # Disciplina: Data Architecture, Integration and Ingestion
 
-## Professor: Ivan Ferrreira Gancev [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ivan-gancev-8571b017/)
+## Professor: Ivan Ferrreira Gancev [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ivan-gancev-8571b017/){:target="_blank"}
 
 ## Conteúdo da Disciplina
 1. Pilares de arquitetura: persistência, integração e consumo
@@ -39,9 +39,9 @@ Parte 3:
 - Entrega: Crie os arquivos CSV com a modelagem definida na parte 1 e os scripts de carga para 1 dos 3 bancos usados no exercício;
 
 ### Integrantes da Equipe
-1. [Fabio Souza](https://www.linkedin.com/in/fabiomarcelosouza/)
-2. [Felipe Scudeller](https://www.linkedin.com/in/felipe-scudeller/)
-3. [Victor Galvão](https://www.linkedin.com/in/victor-galv%C3%A3o-74b63410a/)
+1. Fabio Souza [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/fabiomarcelosouza/){:target="_blank"}
+2. Felipe Scudeller [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/felipe-scudeller/){:target="_blank"}
+2. Victor Galvão [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/victor-galv%C3%A3o-74b63410a/){:target="_blank"}
 
 ### Ferramentas e Tecnologias Utilizadas
 1. **[MongoDB](https://docs.mongodb.com/)**:
