@@ -1,0 +1,6 @@
+"0","ggplot(data = reshape2::melt(correlacao_dummies)) +"
+"0","  geom_tile(aes(Var1, Var2, fill = value)) +"
+"0","  scale_fill_gradient(low = ""blue"", high = ""white"") +"
+"0","  theme_minimal() +"
+"0","  labs(title = ""Mapa de Correlação Linear"") + "
+"0","  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))"

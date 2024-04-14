@@ -1,0 +1,4 @@
+"0","library(prcomp)
+"
+"2","Error in library(prcomp) : there is no package called ‘prcomp’
+"

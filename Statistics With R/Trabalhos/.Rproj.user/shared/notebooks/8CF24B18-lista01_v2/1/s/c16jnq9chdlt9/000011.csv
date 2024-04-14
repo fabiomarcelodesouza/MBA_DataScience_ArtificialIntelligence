@@ -1,0 +1,6 @@
+"0","treino_regressao_normalizado <- scale(treino_regressao[c(1, 3, 4)])"
+"0","#colnames(treino_normalizado)[colnames(treino_normalizado) == ""valorv""] <- ""valorv_norm"""
+"0","#colnames(treino_normalizado)[colnames(treino_normalizado) == ""csinistros""] <- ""csinistros_norm"""
+"0","#colnames(treino_normalizado)[colnames(treino_normalizado) == ""cmsinistro""] <- ""cmsinistro_norm"""
+"0",""
+"0","treino_regressao = cbind(treino_regressao, treino_regressao_normalizado)"

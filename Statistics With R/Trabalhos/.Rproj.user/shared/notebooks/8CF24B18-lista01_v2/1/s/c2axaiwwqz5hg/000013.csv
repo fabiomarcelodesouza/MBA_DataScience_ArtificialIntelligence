@@ -1,0 +1,6 @@
+"0","claims <- read.csv2(""claims.csv"")"
+"0",""
+"0","#Criando a variavel target cmsinistro"
+"0","claims <- claims %>% mutate(cmsinistro = csinistros / nsinistros)"
+"0",""
+"0","head(claims)"

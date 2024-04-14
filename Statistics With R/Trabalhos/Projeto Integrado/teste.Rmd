@@ -1,0 +1,52 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+```
+
+
+```{r}
+train <- read.csv2("data-science-puzzle (1)\\train.csv", sep = ",", dec = ".")
+train <- train_numericos[, -which(names(train_numericos) == "X023c68873b" | names(train_numericos) == "id")]
+train_normalizado <- as.data.frame(scale(train_numericos))
+```
+
+```{r}
+# Perform forward selection
+forward_model <- lm(y ~ target, data = train_normalizado)  # Start with an intercept-only model
+step_forward <- step(forward_model, direction = "forward", scope = ~ . - 1, trace = 0)
+
+# Perform backward elimination
+backward_model <- lm(y ~ ., data = train_normalizado)  # Start with a model including all predictors
+step_backward <- step(backward_model, direction = "backward", trace = 0)
+
+# Perform stepwise selection
+stepwise_model <- lm(y ~ 1, data = train_normalizado)  # Start with an intercept-only model
+stepwise <- step(stepwise_model, direction = "both", scope = ~ . - 1, trace = 0)
+
+# Compare the models using adjusted R-squared
+adj_r_squared <- c(
+  forward = summary(step_forward)$adj.r.squared,
+  backward = summary(step_backward)$adj.r.squared,
+  stepwise = summary(stepwise)$adj.r.squared
+)
+
+# Find the best model
+best_model <- names(adj_r_squared)[which.max(adj_r_squared)]
+
+# Print the best model and its adjusted R-squared
+cat("Best Model:", best_model, "\n")
+cat("Adjusted R-squared:", adj_r_squared[best_model], "\n")
+
+# Get the final model with the selected predictors
+final_model <- ifelse(best_model == "forward", step_forward, 
+                      ifelse(best_model == "backward", step_backward, stepwise))
+
+# Print the final model summary
+summary(final_model)
+
+```
+

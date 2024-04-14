@@ -1,18 +1,16 @@
 # Disciplina: Data Architecture, Integration and Ingestion
 
-## Indice de Conteúdo
 - [Disciplina: Data Architecture, Integration and Ingestion](#disciplina-data-architecture-integration-and-ingestion)
-  - [Indice de Conteúdo](#indice-de-conteúdo)
   - [Professor: Ivan Ferrreira Gancev ](#professor-ivan-ferrreira-gancev-)
   - [Conteúdo da Disciplina](#conteúdo-da-disciplina)
-- [Trabalhos Desenvolvidos](#trabalhos-desenvolvidos)
+- [Cases Desenvolvidos](#cases-desenvolvidos)
   - [Trabalho em grupo](#trabalho-em-grupo)
-    - [Descrição:](#descrição)
+    - [Descricao do Case:](#descricao-do-case)
     - [Integrantes da Equipe](#integrantes-da-equipe)
     - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas)
     - [Entregas Realizadas](#entregas-realizadas)
-  - [Projeto Integrado](#projeto-integrado)
-    - [Descrição:](#descrição-1)
+  - [Case: Projeto Integrado - Quantum Finance](#case-projeto-integrado---quantum-finance)
+    - [Descrição do Case:](#descrição-do-case)
     - [Integrantes da Equipe](#integrantes-da-equipe-1)
     - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas-1)
     - [Entregas Realizadas](#entregas-realizadas-1)
@@ -38,9 +36,9 @@
 10. Arquiteturas para analytics
 11. Boas práticas, recomendações e cuidados
 
-# Trabalhos Desenvolvidos
+# Cases Desenvolvidos
 ## Trabalho em grupo
-### Descrição:
+### Descricao do Case:
 Parte 1:
 - Crie 3 tabelas para um site de venda de sapatos;
 - Adicionar campos, se desejar;
@@ -58,7 +56,7 @@ Parte 3:
 ### Integrantes da Equipe
 1. Fabio Souza [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/fabiomarcelosouza/)
 2. Felipe Scudeller [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/felipe-scudeller/)
-2. Victor Galvão [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/victor-galv%C3%A3o-74b63410a/)
+3. Victor Galvão [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/victor-galv%C3%A3o-74b63410a/)
 
 ### Ferramentas e Tecnologias Utilizadas
 1. **MongoDB [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb)](https://docs.mongodb.com/)**
@@ -94,8 +92,8 @@ Parte 3:
    2. `DML_MySQL.sql` - Inserção de dados nas tabelas "Produto", "Cliente" e "Pedido" dentro do banco de dados "avaliacao_grupo".
    3. `Modelagem.xlsx` - Modelagem do banco de dados "avaliacao_grupo".
 
-## Projeto Integrado
-### Descrição:
+## Case: Projeto Integrado - Quantum Finance
+### Descrição do Case:
 A Startup QuantumFinance é uma Fintech, que esta entrando no mercado para concorrer com grandes players da área.
 Durante nosso MBA de Data Science & Artificial Intelligence vamos aplicar ciência de dados e inteligência artificial para fomentar a expansão da Startup, em seus diversos segmentos e áreas de negócio.
 
@@ -139,14 +137,14 @@ Entrega 02: Desenvolver um (1) pipeline do processos de ingestão de um dos requ
    - Amplamente utilizado para integrar sistemas heterogêneos, processar e transformar dados em tempo real, bem como gerenciar o fluxo de dados em ambientes distribuídos.
 
 ### Entregas Realizadas
-1. 0_README.txt - Instruções para deploy do pipeline.
-2. 1_clientes_criacao_pastas.txt - Criação do contêiner Docker "namenode" e criação dos diretórios no sistema de arquivos distribuído Hadoop (HDFS).
-3. 2_clientes_transf_arq.txt - Cópia dos arquivos locais para o contêiner Docker chamado "namenode" e cópia para o sistema de arquivos distribuído Hadoop (HDFS), organizando os arquivos em diferentes diretórios.
-4. arquitetura_dados.jpeg - Arquitetura de dados do pipeline.
+1. `0_README.txt` - Instruções para deploy do pipeline.
+2. `1_clientes_criacao_pastas.txt` - Criação do contêiner Docker "namenode" e criação dos diretórios no sistema de arquivos distribuído Hadoop (HDFS).
+3. `2_clientes_transf_arq.txt` - Cópia dos arquivos locais para o contêiner Docker chamado "namenode" e cópia para o sistema de arquivos distribuído Hadoop (HDFS), organizando os arquivos em diferentes diretórios.
+4. `arquitetura_dados.jpeg` - Arquitetura de dados do pipeline.
 ![Arquitetura de dados do pipeline](./5DTS%20-%20Trabalho%20-%20Projeto%20Integrado/Entregaveis/arquitetura_dados.jpeg)
-5. clientes.csv - Dados dos clientes
-6. ddl_mongo.sql - Criação das coleções necessárias no banco de dados MongoDB.
-7. ddl_mysql.sql - Inserção dos dados nas coleções do MongoDB.
-8. decs.tar - PDFs dos documentos assinados pelos clientes.
-9.  fotos.tar - Fotos dos clientes.
-10. template_nifi_projeto_integrado_final.xml - XML exportado do pipeline implementado no NiFi.
+5. `clientes.csv` - Dados dos clientes
+6. `ddl_mongo.sql` - Criação das coleções necessárias no banco de dados MongoDB.
+7. `ddl_mysql.sql` - Inserção dos dados nas coleções do MongoDB.
+8. `decs.tar` - PDFs dos documentos assinados pelos clientes.
+9. `fotos.tar` - Fotos dos clientes.
+10. `template_nifi_projeto_integrado_final.xml` - XML exportado do pipeline implementado no NiFi.

@@ -1,0 +1,118 @@
+---
+title: "Projeto Integrado"
+output: html_document
+date: "2023-09-08"
+author: "Fabio Souza / Felipe Scudeller / Victor Galvão"
+---
+
+```{r carregando-bibliotecas}
+#install.packages("ggplot2")
+#install.packages("dplyr")
+#install.packages("caret")
+#install.packages("corrplot")
+#install.packages("Metrics")
+#install.packages("rpart")
+#install.packages("rpart.plot")
+install.packages("stats")
+install.packages("prcomp")
+
+library(ggplot2)
+library(dplyr)
+library(rmarkdown)
+library(caret)
+library(corrplot)
+library(Metrics)
+library(rpart)
+library(rpart.plot)
+library(stats)
+library(prcomp)
+```
+
+```{r lendo-dataset-realizando-analise-descritiva}
+train <- read.csv2("data-science-puzzle (1)\\train.csv", sep = ",", dec = ".")
+#train_numericos <- train %>% select_if(is.character)
+train_numericos <- train_numericos[, -which(names(train_numericos) == "id")]
+
+head(train_numericos)
+
+sum(is.na(train_numericos))
+
+train_numericos %>% ggplot() + geom_boxplot(aes(y = target))
+```
+
+```{r removendo-outliers-metodo-iqr}
+# Calcular o primeiro quartil (Q1) e o terceiro quartil (Q3)
+q1 <- quantile(train_numericos$target, probs = 0.25)
+q3 <- quantile(train_numericos$target, 0.75)
+
+# Calcular o intervalo interquartil (IQR)
+iqr <- q3 - q1
+
+# Definir os limites para identificar outliers
+limite_inferior <- q1 - 1.5 * iqr
+limite_superior <- q3 + 1.5 * iqr
+
+# Remover outliers com base nos limites
+train_sem_outliers <- subset(train_numericos, target <= limite_superior)
+train_sem_outliers %>% ggplot() + geom_boxplot(aes(y = target))
+```
+
+
+```{r mapa-correlacao}
+#matriz de correlação
+correlacao <- cor(train_sem_outliers)
+```
+
+
+```{r plotando-mapa-correlacao}
+meu_grafico  <- ggplot(data = reshape2::melt(correlacao)) +
+  geom_tile(aes(Var1, Var2, fill = value)) +
+  scale_fill_gradient(low = "blue", high = "white") +
+  theme_minimal() +
+  labs(title = "Mapa de Correlação Linear") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+
+# Defina o tamanho desejado em polegadas
+largura <- 20  # Largura em polegadas
+altura <- 15    # Altura em polegadas
+
+# Salve o gráfico com as dimensões especificadas
+ggsave("mapa_correlacao.png", plot = meu_grafico, width = largura, height = altura)
+
+correlacao[,ncol(correlacao)]
+
+pca_result <- prcomp(train_sem_outliers[, -100], scale = TRUE)
+summary(pca_result)
+pca_result$rotation
+pca_result$sdev
+prop_var_exp <- pca_result$sdev^2 / sum(pca_result$sdev^2)
+
+
+# Suponha que 'prop_var_exp' seja um vetor com as proporções de variância explicada
+# Para calcular a proporção de variância cumulativa até o componente principal (i)
+
+componente_principal_i <- 55  # Substitua pelo número do componente desejado
+
+prop_var_cumulativa_i <- sum(prop_var_exp[1:componente_principal_i])
+prop_var_cumulativa_i
+
+
+
+
+
+
+
+
+
+# Suponha que 'dados' seja seu dataframe de dados originais
+# Suponha que 'prop_var_exp' contenha as proporções de variância explicada após a PCA
+
+# Determinar o número de componentes principais a serem retidos com base no limiar da variância cumulativa
+limiar_var_cumulativa <- 0.72  # Substitua pelo seu limiar desejado
+num_componentes_a_reter <- sum(cumsum(prop_var_exp) < limiar_var_cumulativa) + 1
+
+# Refazer a PCA com o número selecionado de componentes principais
+pca_result_reduzido <- prcomp
+
+pca_result_reduzido <- prcomp(train_sem_outliers, scale. = TRUE, n.comp = num_componentes_a_reter)
+```

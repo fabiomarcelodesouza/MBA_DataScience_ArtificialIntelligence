@@ -1,0 +1,2 @@
+"0","#matriz de correlação"
+"0","correlacao_dummies <- cor(claims_dummies)"

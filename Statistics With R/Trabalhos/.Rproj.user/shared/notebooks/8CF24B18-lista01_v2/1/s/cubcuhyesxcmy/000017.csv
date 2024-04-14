@@ -1,0 +1,2 @@
+"0","#Analise por area"
+"0","claims %>% ggplot() + geom_point(aes(x = areac, y = cmsinistro))"

@@ -1,0 +1,4 @@
+"0",""
+"0","ggplot(data = claims_features, aes(y = cmsinistro)) +"
+"0","  geom_boxplot(fill = ""lightblue"") +"
+"0","  labs(title = ""Boxplot da Sétima Coluna"", y = ""Valores"")"

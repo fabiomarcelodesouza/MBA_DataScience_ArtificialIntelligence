@@ -1,0 +1,4 @@
+"0","dummies_vars = dummyVars(~tipov + sexoc + areac, data = claims)"
+"0","dummies_dados <- predict(dummies_vars, newdata = claims)"
+"0","claims_dummies = cbind(claims, dummies_dados)"
+"0","claims_dummies <- dplyr::select(claims_dummies, -c(tipov, sexoc, areac))"

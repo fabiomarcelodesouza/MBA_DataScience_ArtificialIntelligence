@@ -1,0 +1,2 @@
+"0","#Analise por idade do condutor"
+"0","claims %>% ggplot() + geom_point(aes(x = idadec, y = cmsinistro))"

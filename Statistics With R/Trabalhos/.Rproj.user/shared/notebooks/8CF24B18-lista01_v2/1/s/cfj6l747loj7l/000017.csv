@@ -1,0 +1,2 @@
+"0","#Analise por sexo"
+"0","claims %>% ggplot() + geom_point(aes(x = sexoc, y = cmsinistro))"

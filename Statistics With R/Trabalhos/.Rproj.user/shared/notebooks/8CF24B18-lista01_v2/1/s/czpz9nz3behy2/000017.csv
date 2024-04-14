@@ -1,0 +1,2 @@
+"0","# Analise por tipo de veiculo"
+"0","claims %>% ggplot() + geom_point(aes(x = tipov, y = cmsinistro))"

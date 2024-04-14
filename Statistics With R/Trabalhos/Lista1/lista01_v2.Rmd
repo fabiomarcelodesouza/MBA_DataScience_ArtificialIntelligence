@@ -1,0 +1,232 @@
+---
+title: "Lista 01"
+output: html_document
+date: "2023-09-08"
+author: "Fabio Souza / Felipe Scudeller / Victor Galvão"
+---
+
+```{r carregando-bibliotecas}
+#install.packages("ggplot2")
+#install.packages("dplyr")
+#install.packages("caret")
+#install.packages("corrplot")
+#install.packages("Metrics")
+#install.packages("rpart")
+#install.packages("rpart.plot")
+
+library(ggplot2)
+library(dplyr)
+library(rmarkdown)
+library(caret)
+library(corrplot)
+library(Metrics)
+library(rpart)
+library(rpart.plot)
+```
+
+```{r lendo-dataset}
+claims <- read.csv2("claims.csv")
+
+#Criando a variavel target cmsinistro
+claims <- claims %>% mutate(cmsinistro = csinistros / nsinistros)
+
+head(claims)
+```
+
+
+```{r analise-basica}
+#Dimensão do dataframe
+dim(claims)
+
+#Nome das colunas (atributos)
+names(claims)
+
+#Verificando se existem dados faltantes
+sum(is.na(claims))
+
+#exibindo primeiros registros
+head(claims)
+```
+
+
+```{r tipo-veiculo}
+# Analise por tipo de veiculo
+claims %>% ggplot() + geom_point(aes(x = tipov, y = cmsinistro))
+claims %>% ggplot() + geom_boxplot(aes(x = tipov, y = cmsinistro))
+```
+
+```{r idade-condutor}
+#Analise por idade do condutor
+claims %>% ggplot() + geom_point(aes(x = idadec, y = cmsinistro))
+claims %>% ggplot() + geom_boxplot(aes(x = idadec, y = cmsinistro, group = idadec)) 
+```
+
+```{r idade-veiculo}
+#Analise por idade do veiculo
+claims %>% ggplot() + geom_point(aes(x = idadev, y = cmsinistro))
+claims %>% ggplot() + geom_boxplot(aes(x = idadev, y = cmsinistro, group = idadev)) 
+```
+
+
+```{r sexo}
+#Analise por sexo
+claims %>% ggplot() + geom_point(aes(x = sexoc, y = cmsinistro))
+claims %>% ggplot() + geom_boxplot(aes(x = sexoc, y = cmsinistro)) 
+```
+
+
+```{r area}
+#Analise por area
+claims %>% ggplot() + geom_point(aes(x = areac, y = cmsinistro))
+claims %>% ggplot() + geom_boxplot(aes(x = areac, y = cmsinistro))
+```
+
+
+```{r criando-variaveis-dummies}
+dummies_vars = dummyVars(~tipov + sexoc + areac, data = claims)
+dummies_dados <- predict(dummies_vars, newdata = claims)
+claims_dummies = cbind(claims, dummies_dados)
+claims_dummies <- dplyr::select(claims_dummies, -c(tipov, sexoc, areac))
+```
+
+
+```{r mapa-correlacao}
+#matriz de correlação
+correlacao_dummies <- cor(claims_dummies)
+```
+
+
+```{r plotando-mapa-correlacao}
+ggplot(data = reshape2::melt(correlacao_dummies)) +
+  geom_tile(aes(Var1, Var2, fill = value)) +
+  scale_fill_gradient(low = "blue", high = "white") +
+  theme_minimal() +
+  labs(title = "Mapa de Correlação Linear") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+```
+
+
+```{r analisando-correlacoes-fortes}
+as.data.frame(correlacao_dummies) %>% arrange(cmsinistro)
+
+correlacao_forte <- correlacao_dummies[correlacao_dummies[,7] > 0.9, ]
+
+#expos
+#areacE
+#csinistros
+
+ggplot(data = reshape2::melt(correlacao_forte)) +
+  geom_tile(aes(Var1, Var2, fill = value)) +
+  scale_fill_gradient(low = "blue", high = "white") +
+  theme_minimal() +
+  labs(title = "Mapa de Correlação Linear") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+```
+
+
+```{r escolhend-features-para-utilizar}
+head(claims_dummies)
+
+claims_features <- claims_dummies[c(1, 25, 4, 7)]
+
+claims_features %>% ggplot() + geom_boxplot(aes(y = cmsinistro))
+
+ggplot(data = claims_features, aes(y = cmsinistro)) +
+  geom_boxplot(fill = "lightblue") +
+  labs(title = "Boxplot da Sétima Coluna", y = "Valores")
+```
+
+
+```{r removendo-outliers-metodo-iqr}
+# Calcular o primeiro quartil (Q1) e o terceiro quartil (Q3)
+q1 <- quantile(claims_features$cmsinistro, probs = 0.25)
+q3 <- quantile(claims_features$cmsinistro, 0.75)
+
+# Calcular o intervalo interquartil (IQR)
+iqr <- q3 - q1
+
+# Definir os limites para identificar outliers
+limite_inferior <- q1 - 1.5 * iqr
+limite_superior <- q3 + 1.5 * iqr
+
+# Remover outliers com base nos limites
+claims_sem_outliers <- subset(claims_features, cmsinistro >= limite_superior)
+```
+
+
+```{r separando-treino-teste}
+# Definir a proporção desejada de treinamento e teste (por exemplo, 80% de treinamento, 20% de teste)
+proporcao_treinamento <- 0.8
+
+# Calcular o tamanho dos conjuntos de treinamento e teste com base na proporção
+tamanho_treinamento <- round(nrow(claims_sem_outliers) * proporcao_treinamento)
+tamanho_teste <- nrow(claims_sem_outliers) - tamanho_treinamento
+
+# Criar índices aleatórios para amostrar os dados
+indices_amostra <- sample(1:nrow(claims_sem_outliers))
+
+# Dividir o dataframe em conjuntos de treinamento e teste
+treino_regressao <- claims_sem_outliers[indices_amostra[1:tamanho_treinamento], ]
+teste_regressao <- claims_sem_outliers[indices_amostra[(tamanho_treinamento + 1):nrow(claims_sem_outliers)], ]
+```
+
+
+```{r normalizando-base-treino}
+treino_regressao_normalizado <- scale(treino_regressao[c(1, 3, 4)])
+#colnames(treino_normalizado)[colnames(treino_normalizado) == "valorv"] <- "valorv_norm"
+#colnames(treino_normalizado)[colnames(treino_normalizado) == "csinistros"] <- "csinistros_norm"
+#colnames(treino_normalizado)[colnames(treino_normalizado) == "cmsinistro"] <- "cmsinistro_norm"
+
+treino_regressao = cbind(treino_regressao, treino_regressao_normalizado)
+```
+
+
+```{r aplicando-regressao-linear}
+modelo_regressao <- lm(cmsinistro ~ valorv + areacE + csinistros, data = treino_regressao)
+summary(modelo_regressao)
+
+# Faça previsões com o modelo nos dados de teste
+previsoes <- predict(modelo_regressao, newdata = teste_regressao)
+
+# Calculando o RMSE
+rmse_regressao <- rmse(previsoes, teste_regressao$cmsinistro)
+
+cat("RMSE:", rmse_regressao)
+```
+
+```{r analise_residuo}
+residuos <- residuals(modelo_regressao)
+plot(modelo_regressao, which = 1)
+```
+
+
+```{r preparando-dados-arvore-decisao}
+# Definir a proporção desejada de treinamento e teste (por exemplo, 80% de treinamento, 20% de teste)
+proporcao_treinamento <- 0.8
+
+# Calcular o tamanho dos conjuntos de treinamento e teste com base na proporção
+tamanho_treinamento <- round(nrow(claims_features) * proporcao_treinamento)
+tamanho_teste <- nrow(claims_features) - tamanho_treinamento
+
+# Criar índices aleatórios para amostrar os dados
+indices_amostra <- sample(1:nrow(claims_features))
+
+# Dividir o dataframe em conjuntos de treinamento e teste
+treino_arvore <- claims_features[indices_amostra[1:tamanho_treinamento], ]
+teste_arvore <- claims_features[indices_amostra[(tamanho_treinamento + 1):nrow(claims_features)], ]
+```
+
+
+```{r aplicando-arvore-descicao}
+# Ajustar o modelo da árvore de decisão
+modelo_arvore <- rpart(cmsinistro ~ valorv + areacE + csinistros, data = treino_arvore)
+
+# Fazer previsões para novos dados
+previsao <- predict(modelo_arvore, teste_arvore)
+
+# Calcule o RMSE
+rmse_arvore <- rmse(previsao, teste_arvore$cmsinistro)
+
+# Imprima o RMSE
+cat("RMSE Regressao:", rmse_regressao, "/ RMSE Arvore:", rmse_arvore)
+```

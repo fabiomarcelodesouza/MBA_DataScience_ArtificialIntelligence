@@ -1,0 +1,51 @@
+"0","#install.packages(""ggplot2"")"
+"0","#install.packages(""dplyr"")"
+"0","#install.packages(""caret"")"
+"0","#install.packages(""corrplot"")"
+"0","#install.packages(""Metrics"")"
+"0","#install.packages(""rpart"")"
+"0","#install.packages(""rpart.plot"")"
+"0",""
+"0","library(ggplot2)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(rmarkdown)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"0","library(caret)"
+"2","Carregando pacotes exigidos: lattice
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","library(corrplot)"
+"2","corrplot 0.92 loaded
+"
+"2","
+Attaching package: ‘Metrics’
+
+"
+"2","The following objects are masked from ‘package:caret’:
+
+    precision, recall
+
+"
+"0","library(rpart)"
+"0","library(rpart.plot)"

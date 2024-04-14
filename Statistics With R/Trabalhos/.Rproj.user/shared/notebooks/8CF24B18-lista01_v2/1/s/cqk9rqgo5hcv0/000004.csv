@@ -1,0 +1,2 @@
+"0","residuos <- residuals(modelo_regressao)"
+"0","plot(modelo_regressao, which = 1)"
