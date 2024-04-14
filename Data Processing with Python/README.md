@@ -20,7 +20,7 @@
 5. Pandas
 6. Visualização de Dados
 
-# Cases Desenvolvidos
+# Cases Desenvolvidos 
 ## Case: EDA (Exploratory Data Analysis) utilizando Python
 ### Descrição do Case:
 Realização de uma análise completa de um conjunto de dados utilizando Python, onde tivemos que realizar uma análise detalhada de um dataset (https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.csv) utilizando a linguagem de programação Python. O conjunto de dados consiste em informações sobre habitação, com várias variáveis como idade, localização geográfica, população, número de quartos, valor médio das casas, entre outras.
