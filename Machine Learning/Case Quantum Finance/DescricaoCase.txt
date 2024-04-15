@@ -1,0 +1,26 @@
+Quantum Finance - Exploração de Dados e Machine Learning
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Quantum Finance - Projeto Integrado - Apresentação de aplicação em Inteligência Artificial/Machine Learning  (Turma 5DTS)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dataset: https://www.kaggle.com/datasets/parisrohan/credit-score-classification
+
+- O que deve ser apresentado?
+
+Quantum Finance – A partir da base de classificação de credit score, a qual vocês têm acesso aos dados, alguns códigos e resultados. 
+
+Trabalho:
+
+1-    Criar um modelo de classificação, aplicar na base, colher e explicar os resultados.
+2-    Criar um sistema especialista OU usar um algoritmo não supervisionado na base e falar da experiencia (conter EDA e utilização do algoritmo na análise).
+
+Trabalho precisa ser entregue impreterivelmente dia 08/10/2023, até as 23:59. 
+
+Na entrega no portal subir código e outros materiais em um arquivo zip.
+
+Como falado em sala: tentem se divertir nas equipes do startup one e começar por um bom processo de EDA, também se possível para aqueles que forem modelar o problema como classificação, favor prover resultados de testes com diferentes classificadores.
+
+Boa sorte!
+
+[]'s
