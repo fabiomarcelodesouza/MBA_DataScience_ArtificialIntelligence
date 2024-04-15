@@ -1,0 +1,11 @@
+Assista o vídeo da demo para ver o resultado final do projeto que fizemos em sala: https://www.youtube.com/watch?v=rxJCkBenWIA
+
+Observe que saída do console se refere ao Command Module e com isso é possível verificar o log de temperatura e humidade que está sendo obtido do Arduino e enviado para o Blynk. Assim como também a confirmação de alerta de pessoa presente na área de risco.
+
+- Utilizar o resultado do projeto final da última aula feito em grupo e incluir o desenho técnico final;
+- Deve-se também fazer referência aos recursos de nuvem e de borda que foram mostrados em aula;
+- Não é necessário fazer a implementação de nenhum código;
+- Escrever um relatório de 2 páginas explicando a arquitetura e o comportamento esperado de cada parte;
+- Não esqueça de comentar como todos os requisites foram atendidos e de responder aos questionamentos do cliente.
+
+Boa sorte!
