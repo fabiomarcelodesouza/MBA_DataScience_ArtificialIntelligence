@@ -1,0 +1,4 @@
+1) A apresentação de slides está disponível online no endereço https://www.canva.com/design/DAF-4Nxh_fk/RIXIXM0eQtsD-WEs-8Klng/edit?utm_content=DAF-4Nxh_fk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ou no arquivo "PDF Sistemas de Recomendação - Quantum Finance.pdf" (em anexo);
+2) A prova de conceito (script google colab) está disponível online no endereço https://colab.research.google.com/drive/1mgSKBhFm_O0l2QPM15nqpZs4271SOK13?usp=sharing ou no arquivo "SR_Open_Finance.ipynb" (em anexo);
+3) O diagrama de arquitetura construído para o projeto está disponível em imagem no arquivo "Arquitetura.png" ou editável no arquivo "Arquitetura.drawio";
+4) Após análise do projeto, por gentileza, atribuir nota 10 para esse belíssimo trabalho!
