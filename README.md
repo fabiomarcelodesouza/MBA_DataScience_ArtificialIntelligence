@@ -1,10 +1,15 @@
 # MBA em Data Science e Inteligência Artificial
-
-![MBA em Data Science e Inteligência Artificial](https://imageurl.com)
-
 Bem-vindo ao meu repositório do MBA em Data Science and Artificial Intelligence que cursei entre 04/2023 e 04/2024 na FIAP! Aqui você encontrará os cases desenvolvidos em todas as disciplinas que tive durante o programa e também informações relevantes sobre o os detalhes do curso, competências e habilidades que adquiri, frameworks e ferramentas que utilizei, e muito mais.
 
-## Sobre o Programa
+## Sobre o Repositório
+Este repositório contém todos os cases desenvolvidos em todas as disciplinas cursadas durante o MBA e está organizado em diretórios com os nomes das disciplinas. Ao acessar cada diretório, você encontrará um README contendo
+1. Professor na disciplina
+2. Conteúdo resumido da disciplina
+3. Cases desenvolvidos
+
+Fique a vontade para obter conhecimento, colaborar, ou me contactar pelo e-mail fabmasouza@hotmail.com,
+
+## Sobre o MBA
 Durante o MBA em Data Science and Artificial Intelligence, me preparei para:
 - Compreender os modelos estatísticos e analíticos e construir modelos preditivos, prescritivos e generativos, além outros algoritmos de inteligência artificial.
 - Criar ferramentas de suporte à tomada de decisão corporativa, com auxílio de modelos estatísticos que expliquem um problema ou uma oportunidade de negócio e as incertezas associadas.
