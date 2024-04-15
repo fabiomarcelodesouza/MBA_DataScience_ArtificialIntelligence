@@ -9,7 +9,6 @@
     - [Integrantes da Equipe](#integrantes-da-equipe)
     - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas)
     - [Entregas Realizadas](#entregas-realizadas)
-- [Cases Desenvolvidos](#cases-desenvolvidos-1)
   - [Case: Projeto Integrado - Quantum Finance](#case-projeto-integrado---quantum-finance)
     - [Descricao do Case:](#descricao-do-case-1)
     - [Integrantes da Equipe](#integrantes-da-equipe-1)
@@ -71,7 +70,6 @@ Valor do trabalho: 1 ponto na média final
 ### Entregas Realizadas
 1. `[ENTREGA]_NLP_Aula_2_Exercicio_v_2023_2.ipynb` - Jupyter Notebook com a solução dos problemas propostos
 
-# Cases Desenvolvidos
 ## Case: Projeto Integrado - Quantum Finance
 ### Descricao do Case:
 A QuantumFinance tem um canal de atendimento via chat e precisar classificar os assuntos dos atendimentos para melhorar as tratativas dos chamados dos clientes. O canal recebe textos abertos dos clientes relatando o problema e/ou dúvida e depois é direcionado para alguma área especialista no assunto para uma melhor tratativa.

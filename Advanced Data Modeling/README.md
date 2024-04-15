@@ -89,11 +89,17 @@ Com base neste cenário, será implementado um ambiente Big Data para processame
 ### Entregas Realizadas
 1. `0_README.txt` - Instruções referentes aos arquivos entregues.
 2. `1_AdvancedDataModeling_Pt1.png` - Modelagem parte 1 - Relacional
+
 ![Modelagem parte 1 - Relacional](./Case%20DinDinAgora/1_AdvancedDataModeling_Pt1.png)
+
 3. `2_AdvancedDataModeling_Pt2.png` - Modelagem parte 2 - DW Dimensional
+
 ![Modelagem parte 2 - DW Dimensional](./Case%20DinDinAgora/2_AdvancedDataModeling_Pt2.png)
+
 4. `3_AdvancedDataModeling_Pt3.png` - Modelagem parte 3 - Data Lake
+
 ![Modelagem parte 3 - Data Lake](./Case%20DinDinAgora/3_AdvancedDataModeling_Pt3.png)
+
 1. `4_AdvancedDataModeling_Pt1.sql` - Script para criação do banco de dados relacional (SQL Server)
 2. `5_AdvancedDataModeling_Pt2.sql` - Script para criação do Data Warehouse (SQL Server)
 3. `6_AdvancedDataModeling_Pt3.sql` - Script para criação do banco do Data Lake (SQL Server)

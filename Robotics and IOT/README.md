@@ -37,6 +37,8 @@ Boa sorte!
 
 ### Entregas Realizadas
 1. `arquitetura.drawio` - Drawio com o desenho da arquitetura
-1. `arquitetura.png` - Arquitetura proposta
+2. `arquitetura.png` - Arquitetura proposta
+
 ![Arquitetura proposta](./Trabalho/arquitetura.png)
-2. `Relatorio Final.pdf` - Relatório com a exmplicação da arquitetura e comportamento esperado
+
+3. `Relatorio Final.pdf` - Relatório com a exmplicação da arquitetura e comportamento esperado

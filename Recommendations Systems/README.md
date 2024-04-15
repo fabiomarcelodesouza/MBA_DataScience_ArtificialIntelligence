@@ -1,7 +1,7 @@
 # Disciplina: Recommendations Systems 
 
 - [Disciplina: Recommendations Systems](#disciplina-recommendations-systems)
-  - [Professor: Jose Luiz Maturana Pagnossim \[\](Jose Luiz Maturana Pagnossim)](#professor-jose-luiz-maturana-pagnossim-jose-luiz-maturana-pagnossim)
+  - [Professor: Jose Luiz Maturana Pagnossim ](#professor-jose-luiz-maturana-pagnossim-)
   - [Conteúdo da Disciplina](#conteúdo-da-disciplina)
 - [Cases Desenvolvidos](#cases-desenvolvidos)
   - [Case: Projeto Integrado - Quantum Finance](#case-projeto-integrado---quantum-finance)
@@ -10,7 +10,7 @@
     - [Ferramentas e Tecnologias Utilizadas](#ferramentas-e-tecnologias-utilizadas)
     - [Entregas Realizadas](#entregas-realizadas)
 
-## Professor: Jose Luiz Maturana Pagnossim [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](Jose Luiz Maturana Pagnossim)
+## Professor: Jose Luiz Maturana Pagnossim [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jose-luiz-maturana-pagnossim-3454898/)
 
 ## Conteúdo da Disciplina
 1. Definição, Aplicações e Mercado

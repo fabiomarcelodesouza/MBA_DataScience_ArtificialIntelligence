@@ -141,7 +141,9 @@ Entrega 02: Desenvolver um (1) pipeline do processos de ingestão de um dos requ
 2. `1_clientes_criacao_pastas.txt` - Criação do contêiner Docker "namenode" e criação dos diretórios no sistema de arquivos distribuído Hadoop (HDFS).
 3. `2_clientes_transf_arq.txt` - Cópia dos arquivos locais para o contêiner Docker chamado "namenode" e cópia para o sistema de arquivos distribuído Hadoop (HDFS), organizando os arquivos em diferentes diretórios.
 4. `arquitetura_dados.jpeg` - Arquitetura de dados do pipeline.
+
 ![Arquitetura de dados do pipeline](./5DTS%20-%20Trabalho%20-%20Projeto%20Integrado/Entregaveis/arquitetura_dados.jpeg)
+
 5. `clientes.csv` - Dados dos clientes
 6. `ddl_mongo.sql` - Criação das coleções necessárias no banco de dados MongoDB.
 7. `ddl_mysql.sql` - Inserção dos dados nas coleções do MongoDB.
