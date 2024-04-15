@@ -1,0 +1,5 @@
+Resolver o exercício de classificação de textos disponibilizado em
+
+https://colab.research.google.com/drive/1kgn5kazmQ3BQ6BJPv6F288Xaep9W9-xX?usp=sharing
+
+Importante: A entrega deverá ser o Jupyter Notebook preenchido
