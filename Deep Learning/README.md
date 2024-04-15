@@ -99,9 +99,7 @@ As quatro ações devem ter modelos treinados, e devem ser apresentados os segui
 
 12. **Dense (Keras)**
     - Dense é uma camada em Keras que representa uma camada totalmente conectada em uma rede neural.
-    - Cada unidade na camada densa está
-
- conectada a todas as unidades na camada anterior, formando uma rede densa de conexões.
+    - Cada unidade na camada densa está conectada a todas as unidades na camada anterior, formando uma rede densa de conexões.
     - É uma das camadas mais básicas e amplamente utilizadas em redes neurais artificiais.
 
 13. **Confusion Matrix (Scikit-learn)**
