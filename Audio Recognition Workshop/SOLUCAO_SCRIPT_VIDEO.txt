@@ -1,0 +1,12 @@
+1-Solução implementada: Para atender os requisitos foi feito com script usando a API google (gTTS) para reconhecimento de voz. 
+	1.1- É apresentado a solução com 4 opções em formato de mensagens, em loop, para o usuario.
+	1.2- Pelo microfone, o usuario fala qual é a opção desejada.
+	1.3- Script reconhece a opção de voz e mostra a resposta da opção escolhida.
+	1.4- Se a opção 4 for escolhida, sai do loop. Quando nenhuma opção é escolhida, é informado ao usuario
+
+2- Script no Google colab: https://colab.research.google.com/drive/1ZIg5cAhkE-jCHVj19DRnm2fHvoVYCZ1O?usp=sharing
+3- Link para acessar video apresentado : https://drive.google.com/file/d/1eWS2ziDBpoKYO6dYb120MQcWrv501Nl7/view
+
+4- Caso necessite, segue codigo python em anexo: roda apenas no google colab
+
+5- Atribuir nota 10 por este belissimo trabalho! Obrigado.
