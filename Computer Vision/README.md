@@ -70,15 +70,15 @@ Detecção de vivacidade (liveness) para evitar que um fraudador utilize uma fot
 ### Entregas Realizadas
 1. `photo.jpg` - Foto usada para treino do modelo
 
-![Foto usada para treino do modelo](photo.jpg)
+![Foto usada para treino do modelo](./Case%20Quantum%20Finance/photo.jpg)
 
 2. `photo2.jpg` - Foto usada para treino do modelo
 
-![Foto usada para treino do modelo](photo2.jpg)
+![Foto usada para treino do modelo](./Case%20Quantum%20Finance/photo2.jpg)
 
 3. `photo3.jpg` - Foto usada para treino do modelo
 
-![Foto usada para treino do modelo](photo3.jpg)
+![Foto usada para treino do modelo](./Case%20Quantum%20Finance/photo3.jpg)
 
 4. `READ_ME.txt` - Arquivo texto com instruções da entrega
 5. `visao_computacional.ipynb` - Jupyter notebook com a solução dos problemas propostas
